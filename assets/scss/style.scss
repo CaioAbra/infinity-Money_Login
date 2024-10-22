@@ -8,6 +8,16 @@
     src: url('../fonts/Sora-Light.ttf');
 }
 
+@font-face {
+    font-family: 'Sora-Regular';
+    src: url('../fonts/Sora-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Sora-SemiBold';
+    src: url('../fonts/Sora-SemiBold.ttf');
+}
+
 /* Variáveis de Cores */
 $color-primary: #BDD700;
 $color-secondary: #ADADAD;
@@ -61,7 +71,7 @@ h2 {
     color: $color-text;
     font-size: 18px;
     margin-bottom: 20px;
-    font-family: 'Sora-Medium';
+    font-family: 'Sora-Regular';
 }
 
 /* Estilos do input */
@@ -79,6 +89,7 @@ h2 {
 .form-control::placeholder {
     color: $color-secondary;
     font-family: 'Sora-Light';
+    font-size: 12px !important;
 }
 
 /* Personalizando o checkbox */
@@ -98,6 +109,7 @@ h2 {
     padding-left: 30px;
     cursor: pointer;
     color: #ADADAD;
+    font-family: 'Sora-Regular';
 }
 
 .form-check-label::before {
@@ -140,7 +152,7 @@ h2 {
 .btn-primary {
     background-color: $color-primary;
     border: none;
-    font-family: 'Sora-Medium';
+    font-family: 'Sora-SemiBold';
     font-size: 16px;
     margin-top: 10px;
     color: #161616;
@@ -179,14 +191,14 @@ h2 {
 
 .signup-link p {
     color: $color-secondary;
-    font-family: 'Sora-Medium';
+    font-family: 'Sora-Regular';
 }
 
 .signup-link a {
     text-decoration: none;
     color: $color-text;
     transition: all 0.3s ease;
-    font-family: 'Sora-Medium';
+    font-family: 'Sora-Regular';
 }
 
 .signup-link a:hover {
