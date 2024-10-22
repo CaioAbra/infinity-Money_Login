@@ -53,8 +53,8 @@ body {
 }
 
 .login-card {
-    backdrop-filter: blur(10px); // Efeito de embaçamento no fundo
-    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(8px); // Efeito de embaçamento no fundo
+    -webkit-backdrop-filter: blur(8px);
     background-color: $color-background;
     border-radius: 8px;
     width: 100%;
