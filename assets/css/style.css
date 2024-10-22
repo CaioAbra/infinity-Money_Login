@@ -28,10 +28,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("./../../src/img/bg.png");
+  background-image: url("./../../src/img/BG-Login.png");
   background-size: cover;
   background-position: center;
-  font-family: "Arial", sans-serif;
+  font-family: "Sora-Medium";
 }
 
 .login-container {
