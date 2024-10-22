@@ -1,56 +1,11 @@
-:root {
-  --cinza-claro: #F4F4F4;
-  --laranja: #DE8734;
-  --preto-medio: #141414;
-  --cinza: #4D4D4D;
-  --cinza-medio: #B9B9B9;
-  --vermelho: #E3593B;
-  --verde: #3BE392;
-  --bg-color: #1f1f1f;
-}
-
 @font-face {
-  font-family: "SpaceGrotesk-Bold";
-  src: url("../fonts/SpaceGrotesk-Bold.ttf");
+  font-family: "Sora-Medium";
+  src: url("../fonts/Sora-Medium.ttf");
 }
 @font-face {
-  font-family: "SpaceGrotesk-Light";
-  src: url("../fonts/SpaceGrotesk-Light.ttf");
+  font-family: "Sora-light";
+  src: url("../fonts/Sora-Light.ttf");
 }
-@font-face {
-  font-family: "SpaceGrotesk-Medium";
-  src: url("../fonts/SpaceGrotesk-Medium.ttf");
-}
-@font-face {
-  font-family: "SpaceGrotesk-Regular";
-  src: url("../fonts/SpaceGrotesk-Regular.ttf");
-}
-@font-face {
-  font-family: "SpaceGrotesk-SemiBold";
-  src: url("../fonts/SpaceGrotesk-SemiBold.ttf");
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "SpaceGrotesk-bold";
-}
-
-p,
-a,
-ul,
-li,
-span {
-  font-family: "SpaceGrotesk-Regular";
-}
-
-.navbar-brand,
-.navbar-subtitle {
-  font-family: "SpaceGrotesk-Regular";
-}
-
 * {
   box-sizing: border-box;
 }
@@ -93,9 +48,10 @@ body {
 }
 
 h2 {
-  color: #fff;
+  color: #FFFFFF;
   font-size: 18px;
   margin-bottom: 20px;
+  font-family: Sora-Medium;
 }
 
 .form-control {
@@ -108,11 +64,14 @@ h2 {
 }
 
 .form-control::placeholder {
-  color: #bbb;
+  color: #ADADAD;
+  text-align: center;
+  font-family: Sora-light;
 }
 
 .form-check-label {
-  color: #fff;
+  color: #ADADAD;
+  font-family: Sora-Medium;
 }
 
 .form-check {
@@ -123,6 +82,7 @@ h2 {
   background-color: #BDD700;
   border: none;
   font-weight: bold;
+  font-family: Sora-Medium;
   font-size: 16px;
   margin-top: 10px;
   color: #161616;
@@ -154,16 +114,20 @@ h2 {
 }
 
 .signup-link p {
-  color: #fff;
+  color: #ADADAD;
+  font-family: Sora-Medium;
 }
 
 .signup-link a {
-  color: #BDD700;
   text-decoration: none;
+  color: #FFFFFF;
+  transition: all 0.3s ease;
+  font-family: Sora-Medium;
 }
 
 .signup-link a:hover {
   text-decoration: underline;
+  color: #BDD700;
 }
 
 @media (max-width: 576px) {
