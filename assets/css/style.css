@@ -1,11 +1,14 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Sora-Medium";
   src: url("../fonts/Sora-Medium.ttf");
 }
 @font-face {
-  font-family: "Sora-light";
+  font-family: "Sora-Light";
   src: url("../fonts/Sora-Light.ttf");
 }
+/* Variáveis de Cores */
+/* Global Styles */
 * {
   box-sizing: border-box;
 }
@@ -51,38 +54,86 @@ h2 {
   color: #FFFFFF;
   font-size: 18px;
   margin-bottom: 20px;
-  font-family: Sora-Medium;
+  font-family: "Sora-Medium";
 }
 
+/* Estilos do input */
 .form-control {
-  background-color: #222;
+  background-color: rgba(12, 12, 12, 0.5);
   border: none;
-  color: #fff;
+  color: #ADADAD;
   padding: 12px;
   font-size: 16px;
   border-radius: 4px;
+  border: 1px solid #3F3F3F;
+  text-align: center;
 }
 
 .form-control::placeholder {
   color: #ADADAD;
-  text-align: center;
-  font-family: Sora-light;
+  font-family: "Sora-Light";
+}
+
+/* Personalizando o checkbox */
+.form-check {
+  text-align: left;
+  padding-left: 0;
+}
+
+.form-check-input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
 }
 
 .form-check-label {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
   color: #ADADAD;
-  font-family: Sora-Medium;
 }
 
-.form-check {
-  text-align: left;
+.form-check-label::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  background-color: rgba(12, 12, 12, 0.5);
+  border: 1px solid #3F3F3F;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.form-check-input:checked + .form-check-label::before {
+  background-color: #BDD700;
+  border-color: #90a400;
+}
+
+.form-check-label::after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.form-check-input:checked + .form-check-label::after {
+  opacity: 1;
 }
 
 .btn-primary {
   background-color: #BDD700;
   border: none;
-  font-weight: bold;
-  font-family: Sora-Medium;
+  font-family: "Sora-Medium";
   font-size: 16px;
   margin-top: 10px;
   color: #161616;
@@ -90,11 +141,12 @@ h2 {
 }
 
 .btn-primary:hover {
-  background-color: #a8e60a;
+  background-color: #90a400;
   transform: scale(1.05);
   box-shadow: 0 0 15px rgba(192, 255, 10, 0.6);
 }
 
+/* Animação de "pulse" no botão */
 @keyframes pulse {
   0% {
     transform: scale(1);
@@ -113,16 +165,17 @@ h2 {
   animation: pulse 1s infinite;
 }
 
+/* Estilos do link "Criar uma conta" */
 .signup-link p {
   color: #ADADAD;
-  font-family: Sora-Medium;
+  font-family: "Sora-Medium";
 }
 
 .signup-link a {
   text-decoration: none;
   color: #FFFFFF;
   transition: all 0.3s ease;
-  font-family: Sora-Medium;
+  font-family: "Sora-Medium";
 }
 
 .signup-link a:hover {
@@ -130,6 +183,7 @@ h2 {
   color: #BDD700;
 }
 
+/* Responsividade */
 @media (max-width: 576px) {
   .login-card {
     padding: 20px;
