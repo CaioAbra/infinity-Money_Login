@@ -29,23 +29,25 @@
 <body>
 
     <div class="login-container">
-        <div class="login-box">
-            <div class="logo">
-                <img src="logo.png" alt="Logotipo do Trader">
-            </div>
-            <h2>Faça o Login na sua conta</h2>
-            <form action="" method="POST">
-                <div class="form-group">
-                    <input type="text" class="form-control" id="trader-id" placeholder="ID do Trader" required>
+        <div class="card login-card">
+            <div class="card-body">
+                <div class="logo text-center">
+                    <img src="./src/img/loop.png" alt="Logotipo do Trader">
                 </div>
-                <div class="form-group form-check">
-                    <input type="checkbox" class="form-check-input" id="lembrar">
-                    <label class="form-check-label" for="lembrar">Lembrar-me</label>
+                <h2 class="text-center">Faça o Login na sua conta</h2>
+                <form action="" method="POST">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="trader-id" placeholder="ID do Trader" required>
+                    </div>
+                    <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="lembrar">
+                        <label class="form-check-label" for="lembrar">Lembrar-me</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Acessar conta</button>
+                </form>
+                <div class="signup-link text-center">
+                    <p>Não tem uma conta? <a href="#">Criar uma</a></p>
                 </div>
-                <button type="submit" class="btn btn-primary btn-block">Acessar conta</button>
-            </form>
-            <div class="signup-link">
-                <p>Não tem uma conta? <a href="#">Criar uma</a></p>
             </div>
         </div>
     </div>
